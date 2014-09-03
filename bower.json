@@ -6,6 +6,9 @@
     "Alexander <degacth@yandex.ru>"
   ],
   "description": "touch device and mouse input handler",
+  "dependencies": {
+    "requirejs": "~2.1"
+  },
   "main": "InputHandler.js",
   "keywords": [
     "touch",

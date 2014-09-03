@@ -1,16 +1,20 @@
 # InputHandler
 
+## Insтановка
+```
+bower i inputhandler
+```
+
 ## How to взъюзывать
-Обязательно необходимо заиметь RequireJS
 ```
 <script data-main="main" src="/bower_components/requirejs/require.js"></script>
 ```
 
-Далее клиентский код грузит InputHandler.js и создаёт экземпляр свежезагруженного класса, после чего начинает слушать 
+Далее клиентский код (coffeescript) грузит InputHandler.js и создаёт экземпляр свежезагруженного класса, после чего начинает слушать 
 соответствующие события
 ```
 require [
-    'InputHandler.js'
+    '/path/to/InputHandler.js'
 ], (InputHandler) ->
     element = document.getElementById 'element'
     input = new InputHandler element
