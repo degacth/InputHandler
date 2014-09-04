@@ -72,6 +72,7 @@
             deltaY: deltaY,
             domEvent: e
           });
+          this._lastMoveCoordinates = coords;
         }
         return this._stopEventIfRequired(e);
       };

@@ -50,6 +50,8 @@ define [
           deltaY: deltaY
           domEvent: e
 
+        @_lastMoveCoordinates = coords
+
       @_stopEventIfRequired e
 
     _stopEventIfRequired: (e) ->
