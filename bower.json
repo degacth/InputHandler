@@ -9,7 +9,7 @@
   "dependencies": {
     "requirejs": "~2.1"
   },
-  "main": "InputHandler.js",
+  "main": "dist/InputHandler.js",
   "keywords": [
     "touch",
     "mouse",
