@@ -62,5 +62,5 @@ define [
     _getInputCoordinates: (e) ->
       coords = if e.targetTouches then e.targetTouches[0] else e
 
-      x: coords.pageX || coords.clientX + document.body.scrollLeft - @_element.offsetLeft
-      y: coords.pageY || coords.clientY + document.body.scrollTop - @_element.offsetTop
+      x: (coords.pageX || coords.clientX + document.body.scrollLeft) - @_element.offsetLeft
+      y: (coords.pageY || coords.clientY + document.body.scrollTop) - @_element.offsetTop
