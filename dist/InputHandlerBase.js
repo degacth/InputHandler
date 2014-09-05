@@ -88,8 +88,8 @@
         var coords;
         coords = e.targetTouches ? e.targetTouches[0] : e;
         return {
-          x: coords.pageX || coords.clientX + document.body.scrollLeft - this._element.offsetLeft,
-          y: coords.pageY || coords.clientY + document.body.scrollTop - this._element.offsetTop
+          x: (coords.pageX || coords.clientX + document.body.scrollLeft) - this._element.offsetLeft,
+          y: (coords.pageY || coords.clientY + document.body.scrollTop) - this._element.offsetTop
         };
       };
 
